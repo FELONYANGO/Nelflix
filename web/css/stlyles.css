@@ -80,7 +80,7 @@ nav button{
 }
 .email-signup input{
     font-weight: 700;
-    font-size: 10px;
+    font-size: 20px;
     margin-left: 20px;
     flex:1;
     border:0;
@@ -89,7 +89,7 @@ nav button{
 .email-signup button{
     outline: 0;
     border: 0;
-    font-size: 16px;
+    font-size: 26px;
     background:#db0001;
     color: #fff;
     cursor : pointer;
