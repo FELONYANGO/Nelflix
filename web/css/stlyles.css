@@ -76,16 +76,18 @@ nav button{
 .email-signup{
     margin-top:30px;
     border-radius:4px;
-    background:#fff;
+    background:#303030;
     display: flex;
     align-items: center;
     overflow: hidden;
     height: 6vh;
+    
 }
 .email-signup input{
     font-weight: 700;
     font-size: 20px;
     margin-left: 20px;
+    background:#303030;
     flex:1;
     border:0;
     outline:0;
@@ -148,6 +150,55 @@ nav button{
 }
 .faq h1{
     font-weight: 500;
-    font-size: 40px;
-    
+    font-size: 3rem;
+
+}
+.accordion{
+    width: 100%;
+    max-width: 750px;
+    margin: 60px auto;
+}
+.accordion li{
+    padding: 5px;
+    width: 100%;
+    list-style: none;
+}
+.accordion li label{
+    background: #303030;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 20px;
+    display: flex;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content: '+';
+    position: absolute;
+    right: 20px;
+    font-size: 34px;
+    align-items: center;
+    transition:transform 0.5s;
+       
+}
+input[type="radio"]{
+    display:none;
+}
+
+.accordion .content{
+    background: #303030;
+    overflow: hidden;
+    max-height: 0px;
+    text-align: left;
+    transition: max-height 0.5s, padding 0.5s;
+}
+.accordion input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+
+}
+.accordion input[type="radio"]:checked + label::after{
+
+    transform: rotate(135deg);
 }
